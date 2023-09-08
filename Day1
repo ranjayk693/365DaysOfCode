@@ -1,0 +1,26 @@
+//DAY1 CODE  
+//total no of questions solved-->
+
+/*Program1*/   
+/*Count the number of Digits*/
+/*Link--> https://www.codingninjas.com/studio/problems/count-digits_8416387?leftPanelTab=1*/
+public class Solution {
+    public static int countDigits(int n){
+        // Write your code here.
+        int ans=0;
+        int num=n;
+        while(num!=0)
+        {
+            
+            if(num%10!=0 && n%(num%10)==0  )  //checking for zero denominator to avoid didve by Zero Exception
+                ans++;
+            num/=10;
+            
+        }
+        return ans;
+    }
+}
+
+/*Program2*/   
+/*Count the number of Digits*/
+/*Link--> https://www.codingninjas.com/studio/problems/count-digits_8416387?leftPanelTab=1*/
